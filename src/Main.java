@@ -5,30 +5,22 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        Scanner scanner = new Scanner(System.in);
+        // Building a Mortgage Calculator Application
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Principal: ");
+        int principal = sc.nextInt();
 
 
-        double num = 12.3423213;
-        DecimalFormat twoPoints = new DecimalFormat();
+        System.out.print("Annual Interest Rate: ");
+        float annualInterest = sc.nextFloat();
 
-        twoPoints.setMaximumFractionDigits(2);
-
-        // A very short and simple way to get the answer upto 2 precision points is to use the "%.2f" method
-        // You just need to type System.out.printf("%.2f", 123.4234234) and it will give you the result 123.45
-
-        System.out.println(twoPoints.format(num));
+        System.out.print("Period (Years): ");
+        byte years = sc.nextByte();
 
 
-        System.out.println("Enter the guest names");
-        String guest1 = scanner.next();
-        String guest2 = scanner.next();
-        String guest3 = scanner.next();
-        String guest4 = scanner.nextLine();
-
-        System.out.println(guest4);
-        System.out.println(guest3);
-        System.out.println(guest2);
-        System.out.println(guest1);
+        double mortgage = Mortgage.calculateMortgage(principal, annualInterest, years);
+        System.out.print("Your mortgage is " + mortgage);
 
     }
 }
