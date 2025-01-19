@@ -22,7 +22,10 @@ public class Main {
         double mortgage = Mortgage.calculateMortgage(principal, annualInterest, years);
         System.out.println("Your mortgage is " + mortgage);
 
-        ReadingUserInput.main(args);
+        // ReadingUserInput.main(args);
+        // PrintNameAndAge.main(args);
 
+        //SwitchStatement.main(args);
+        FizzBuzz.main(args);
     }
 }
