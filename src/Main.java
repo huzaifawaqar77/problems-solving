@@ -20,7 +20,9 @@ public class Main {
 
 
         double mortgage = Mortgage.calculateMortgage(principal, annualInterest, years);
-        System.out.print("Your mortgage is " + mortgage);
+        System.out.println("Your mortgage is " + mortgage);
+
+        ReadingUserInput.main(args);
 
     }
 }
