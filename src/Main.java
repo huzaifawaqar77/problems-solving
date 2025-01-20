@@ -14,6 +14,6 @@ public class Main {
 
         ControlFlow.voteEligibilityChecker(args);
 
-        ControlFlow.positiveNegativeChecker(args);
+//        ControlFlow.positiveNegativeChecker(args);
     }
 }
