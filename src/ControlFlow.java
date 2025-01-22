@@ -28,4 +28,47 @@ public class ControlFlow {
         }
 
     }
+
+
+    public static void forLoops(String[] args) {
+        for (int i = 1; i <= 5; i++) {
+            System.out.println("Hello, World! " + i);
+        }
+    }
+
+    public static void forLoopsReverse(String[] args) {
+        for (int i = 5; i > 0; i--) {
+            System.out.println("Hello, World! " + i);
+        }
+    }
+
+    public static void whileLoop(String[] args) {
+        String input = "";
+
+        while (!input.equals("quit")) {
+
+            System.out.print("Input: ");
+            Scanner sc = new Scanner(System.in);
+
+            input = sc.next().toLowerCase();
+
+            if (input.equals("quit")) {
+                break;
+            }
+
+            System.out.println(input);
+        }
+
+    }
+
+
+    public static void forEach() {
+        String[] fruits = {"Apples", "Mangoes", "Oranges"};
+
+        for (String fruit : fruits) {
+            System.out.println(fruit);
+        }
+    }
+
+
 }
