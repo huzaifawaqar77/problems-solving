@@ -62,5 +62,6 @@ public class Mortgage {
         System.out.println("Your mortgage is " + mortgage);
 
         return mortgage;
+        
     }
 }
